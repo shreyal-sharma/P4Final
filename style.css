@@ -1,0 +1,204 @@
+/*DEVELOPER: Shreyal Sharma, IS117-102, Spring, 2024 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+navbar{
+    background-color: rgb(255, 218, 233); /* Light pink background */
+}
+
+.nav-link{
+    color: rgb(102, 51, 102); /* Darker text color for contrast */
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.resume-link {
+    border: 2px solid #333; /* Border around the image */
+    display: inline-block; /* Ensure the link wraps around the image */
+    position: relative; /* Position for the download icon */
+}
+
+.resume-link::after {
+    content: "\2B07"; /* Unicode for download symbol */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.skill-icon img {
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-icon img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+  }
+  
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.resume-link:hover::after {
+    opacity: 1; /* Show on hover */
+}
+
+.resume-image {
+    width: 200%; /* Ensure image fills container */
+}
+
+.nav-link:hover{
+    color: white; /* Change text color on hover for better visibility */
+    background-color: rgb(102, 51, 102); /* Darker background color on hover */
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: rgb(102, 51, 102); /* Darker text color for contrast */
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn {
+    font-weight: bold;
+}
+
+
+
+#home {
+    margin-top: 20px; /* Add margin to the top of the home section */
+}
+
+.bg-pink {
+    background-color: rgb(255, 218, 233); /* Light pink background */
+    border-radius: 15px; /* Optional: Add border-radius for rounded corners */
+    padding: 30px; /* Optional: Add padding for spacing */
+}
+
+.btn-primary {
+    background-color: rgb(233, 20, 109);
+    border-color: rgb(233, 20, 109);
+}
+
+.btn-primary:hover {
+    background-color: rgb(202, 18, 95);
+    border-color: rgb(202, 18, 95);
+}
+
+.btn-outline-primary {
+    color: rgb(233, 20, 109);
+    border-color: rgb(233, 20, 109);
+}
+
+.btn-outline-primary:hover {
+    background-color: rgb(233, 20, 109);
+    color: white;
+}
+
+.main h3{
+    font-size: 6rem;
+    font-weight: 700;
+}
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid rgb(233,20,109);
+    width: 45%;
+}
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color: rgb(233,20,109);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt1:hover{
+    background-color: rgb(202,18,95);
+    transition: 0.5s;
+}
+.main .bt2{
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: rgb(233,20,109);
+    outline: none;
+    border: 1px solid rgb(233,20,109);
+    font-weight: bold;
+    border-radius: 5px;   
+}
+.main .bt2:hover{
+    background-color: rgb(233,20,109);
+    transition: 0.5s;
+    color: white;
+
+}
+.spacer {
+    height: 320px; /* Adjust the height as needed */
+}
+.custom-dark-bg {
+    background-color: #3e0031; /* Adjust the color to your preference */
+    color: white; /* Set text color to white */
+}
+.custom-jumbotron-bg {
+    background-color: #f8a8e6; /* Background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+}
+
+.custom-jumbotron-bg .btn {
+    border-radius: 25px; /* Round button corners */
+}
+
+/* Custom CSS */
+.img-medium {
+    max-width: 200px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.card-img-top {
+    max-width: 50%;
+    height: auto;
+    max-height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-right img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px; /* Set max height as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+}
